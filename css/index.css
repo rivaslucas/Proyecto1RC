@@ -1,0 +1,19 @@
+.titulos{
+    text-align: center !important;
+    margin-top: 5vw;
+    margin-bottom: 4vw;
+    text-decoration:underline;
+    font-size: 4vw;
+}
+.card-img-top{
+    height: 45%;
+}
+@media (max-width:576px) {
+    .card{
+        width: 49vw !important;
+     
+    }
+    .countainer-fluid{
+        margin-left: 5%!important;
+    }
+}
