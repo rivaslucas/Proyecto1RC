@@ -1,19 +1,57 @@
+.carousel{
+    margin-right:-4%;
+}
+.countainer-fluid{
+    margin-left:3%;
+}
 .titulos{
-    text-align: center !important;
-    margin-top: 5vw;
+    font-size: 4vw!important;
+}
+.title{
+    margin-top: 4vw;
     margin-bottom: 4vw;
-    text-decoration:underline;
-    font-size: 4vw;
+    margin-left: 3vw;
+    display: flex;
 }
 .card-img-top{
-    height: 45%;
+    height: 30vw;
 }
+h1{
+    padding-top: .5vw;
+}
+h3{
+color: gray;
+}
+h4{
+    color: rgb(2, 114, 2);
+}
+h5{
+    color: blue;
+    margin-top: 0.5%;
+    margin-left: 2vw;
+}
+
+
+  
+
 @media (max-width:576px) {
     .card{
         width: 49vw !important;
      
     }
     .countainer-fluid{
-        margin-left: 5%!important;
+        margin-left: 6%!important;
+    } 
+    .carousel{
+       margin-right: -4%;
+    }  
+   
+}
+@media (min-width:992px) {
+    .card-img-top{
+        height: 14vw;
+    }
+    .titulos{
+        font-size: 2vw!important;
     }
 }
