@@ -51,6 +51,9 @@ h5{
     .card-img-top{
         height: 14vw;
     }
+    h2{
+        font-size:1.78vw ;
+    }
     .titulos{
         font-size: 2vw!important;
     }
