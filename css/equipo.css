@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} 
+
+main{
+    display: flex;
+   
+    align-items: center;
+    justify-content: center;
+    min-height: 90vh;
+    background-image: url("../img/sobre-nosotros/fondoequipo.jpg");
+    flex-wrap: wrap;
+}
+footer{
+    margin-top: 0%;
+}
+
+.cards:hover{
+    transform: translateY(-15px);
+}
+
+.cards{
+    flex-direction:column;
+    justify-content: space-between;
+    margin: 10px 15px;
+    transition: .5s;
+
+}
+
+
+.container{
+    height: 450px;
+    width: 300px;
+    box-shadow: 0 10px 20px black;
+    background-size: cover;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+    font-family: sans-serif;
+    background-color: white;
+}
+
+
+
+.head{
+    background-color: red;
+    height: 250px;
+    width: 400px;
+    margin-left: -20px;
+    position: relative;
+    top: -80px;
+    box-shadow: 0 2px 15px black;
+
+
+}
+
+.image1{
+   height: 160px;
+   width: 160px;
+   background-image: url("../img/sobre-nosotros/Lucas.jpg");
+   position: relative;
+   top: 85px;
+   margin-left: 90px;
+   background-size: cover;
+   border: none;
+   border-radius: 50%;
+   box-shadow: 0 2px 15px rgb(87, 87, 87);
+}
+
+.image2{
+   height: 160px;
+   width: 160px;
+   background-image: url("../img/sobre-nosotros/Lujan.jpg");
+   position: relative;
+   top: 85px;
+   margin-left: 90px;
+   background-size: cover;
+   border: none;
+   border-radius: 50%;
+   box-shadow: 0 2px 15px rgb(87, 87, 87);
+}
+
+.image3{
+   height: 160px;
+   width: 160px;
+   background-image: url("../img/sobre-nosotros/Javier.jpg");
+   position: relative;
+   top: 85px;
+   margin-left: 90px;
+   background-size: cover;
+   border: none;
+   border-radius: 50%;
+   box-shadow: 0 2px 15px rgb(87, 87, 87);
+}
+
+.image4{
+   height: 160px;
+   width: 160px;
+   background-image: url("../img/sobre-nosotros/francisco.jpg");
+   position: relative;
+   top: 85px;
+   margin-left: 90px;
+   background-size: cover;
+   border: none;
+   border-radius: 50%;
+   box-shadow: 0 2px 15px rgb(87, 87, 87);
+}
+
+.image5{
+    height: 160px;
+    width: 160px;
+    background-image: url("../img/sobre-nosotros/mauro.jpg");
+    position: relative;
+    top: 85px;
+    margin-left: 90px;
+    background-size: cover;
+    border: none;
+    border-radius: 50%;
+    box-shadow: 0 2px 15px rgb(87, 87, 87);
+}
+
+.title{
+    font-size: 15px;
+    color: red;
+} 
+
+p{
+    padding-left: 30px;
+    padding-right: 30px;
+    line-height: 2;
+    color:black ;
+    font-size: 15px;
+}

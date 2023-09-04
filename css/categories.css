@@ -1,0 +1,198 @@
+body{
+    background-image: url(../img/FONDOO.jpg);
+
+}
+h1{
+    text-align: center;
+    padding-top: .5vw;
+    color: white;
+}
+/*===intro===*/
+.intro{
+    background-color: red;
+    color:white;
+    display: grid;
+    grid-template-columns:4fr 5fr ;
+    gap: 10%;
+    padding-left: 10%;
+    border-radius: 20px;
+}
+
+/*==========categoria======*/
+.countainer-fluid{
+   
+    width: 95%;
+}
+.card-img-top{
+    height: 30vw;
+}
+
+
+
+
+
+.row{
+    display: grid;
+    grid-template-columns: repeat(5, .5fr);
+    gap: .7rem;
+    margin-left: 1%;
+    
+    
+}
+
+/*===============paginacion======*/
+/* Restablecer estilos para eliminar márgenes y rellenos por defecto */
+
+
+.paginacion {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.paginacion ul {
+    list-style: none;
+    display: inline-block;
+    padding: 0;
+}
+
+.paginacion ul li {
+    display: inline;
+    margin-right: 5px;
+}
+
+.paginacion ul li a {
+    text-decoration: none;
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.paginacion ul li a:hover {
+    background-color: #0056b3;
+}
+
+.paginacion ul li:first-child a,
+.paginacion ul li:last-child a {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+
+
+@media (max-width:576px) {
+    .card{
+        width: 45vw !important;
+        
+        margin-top: 4vw;
+        
+    }
+   
+   
+  .countainer-fluid{
+    width: 94%;
+  }
+ .card-title{
+        font-size:1.4rem;
+  }
+  .row{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: .7rem;
+    margin-left: 3%;   
+}
+.contenedor-categorias{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+}
+.intro{
+    background-color: red;
+    color:white;
+    display: block;
+    
+   
+    border-radius: 20px;
+}
+.video{
+    
+    width: 80%;
+    
+}
+}
+
+@media (min-width:577px) and (max-width:991px) {
+    .row{
+        margin-left:5% ;
+        grid-template-columns: repeat(3, 1fr);
+             
+    }
+    .card{
+        width: 28vw; 
+        margin-top: 2vw;       
+    }
+
+    .card-img-top{
+        height: 20vw;
+    }
+  
+    .contenedor-categorias{
+        display: grid;
+        grid-template-columns: repeat(4, .3fr);
+    
+    }
+    .video{
+        padding-top: 15%;
+        width: 90%;
+        
+    }
+}
+@media (min-width:992px) {
+    .video{
+    
+        width: 90%;
+        height: 35vh;
+        
+    }
+    .intro{
+        background-color: red;
+        color:white;
+      justify-content: center;
+      align-items: center;
+        height: 45vh;
+       
+        border-radius: 20px;
+    }
+    .row{
+        margin-left:3% ;
+        grid-template-columns: repeat(6, 1fr);
+             
+    }  
+      .card{
+        width: 15vw; 
+        margin-top: 2vw;       
+    }
+    .countainer-fluid {
+        
+        margin: 0 !important;
+    }
+    .carousel{
+        margin-left: 0% !important;
+    }
+    
+    .card-img-top{
+        height: 10vw;
+    }
+    h2{
+        font-size:1.78vw ;
+    }
+    .titulos{
+        font-size: 2vw!important;
+    }
+    .contenedor-categorias{
+        display: grid;
+        grid-template-columns: repeat(8, 1fr);
+    
+    }
+
+}

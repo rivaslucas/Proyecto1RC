@@ -1,23 +1,28 @@
-.carousel{
-    margin-right:-4%;
+body{
+    background-image: url(../img/FONDOO.jpg);
+
 }
-.countainer-fluid{
-    margin-left:3%;
-}
+
+
 .titulos{
     font-size: 4vw!important;
-}
+    }
 .title{
-    margin-top: 4vw;
+    margin-top: 10vw;
     margin-bottom: 4vw;
     margin-left: 3vw;
     display: flex;
 }
+.carousel{
+    padding-right: -3%;
+}
+
 .card-img-top{
     height: 30vw;
 }
 h1{
     padding-top: .5vw;
+    color: white;
 }
 h3{
 color: gray;
@@ -26,32 +31,133 @@ h4{
     color: rgb(2, 114, 2);
 }
 h5{
-    color: blue;
+    color: rgb(48, 197, 6);
     margin-top: 0.5%;
     margin-left: 2vw;
 }
+.countainer-fluid{
+    
+    width: 95%;
+}
+.ro{
+    display: grid;
+    grid-template-columns: repeat(5, .5fr);
+    gap: .7rem;
+    margin-left: 1%;
+    
+    
+}
+.card{
+    max-width: 100%;
+}
 
+/*=========================================CATEGORIAS=======================================================*/
 
-  
+.contenedor-categorias{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+}
+.categoria{
+    background-color: yellow;
+    text-align: center;
+    border: solid 3px black;
+}
+.categoria:hover{
+    cursor:pointer ;
+    & i{
+        color: red;
+        text-shadow:0 0 20px #fff;
+        
+     }
+    & h2{color: red;
+        text-shadow:2px 0 10px #fff;}
+}
+i{
+   
+    width: 100%;
+}
 
 @media (max-width:576px) {
     .card{
-        width: 49vw !important;
-     
+        width: 45vw !important;
+        
+        margin-top: 4vw;
+        
     }
-    .countainer-fluid{
-        margin-left: 6%!important;
-    } 
-    .carousel{
-       margin-right: -4%;
-    }  
    
+   
+  .countainer-fluid{
+    width: 94%;
+  }
+ .card-title{
+        font-size:1.4rem;
+  }
+  .ro{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: .7rem;
+    margin-left: 3%;   
+}
+.contenedor-categorias{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+}
+}
+
+@media (min-width:577px) and (max-width:991px) {
+    .ro{
+        margin-left:5% ;
+        grid-template-columns: repeat(3, 1fr);
+             
+    }
+    .card{
+        width: 28vw; 
+        margin-top: 2vw;       
+    }
+
+    .card-img-top{
+        height: 20vw;
+    }
+  
+    .contenedor-categorias{
+        display: grid;
+        grid-template-columns: repeat(4, .3fr);
+    
+    }
 }
 @media (min-width:992px) {
+   
+    .ro{
+        margin-left:3% ;
+        grid-template-columns: repeat(5, 1fr);
+             
+    }    .card{
+        width: 18vw; 
+        margin-top: 2vw;       
+    }
+    .countainer-fluid {
+        
+        margin: 0 !important;
+    }
+    .carousel{
+        margin-left: 0% !important;
+    }
+    
     .card-img-top{
-        height: 14vw;
+        height: 10vw;
+    }
+    h2{
+        font-size:1.78vw ;
     }
     .titulos{
         font-size: 2vw!important;
     }
+    .contenedor-categorias{
+        display: grid;
+        grid-template-columns: repeat(8, 1fr);
+    
+    }
+
 }

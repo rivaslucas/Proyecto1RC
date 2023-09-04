@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simplebar/5.3.4/simplebar.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../css/nav.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/registroylogin.css ">
+
+    <script src="./js/index.js2"></script>
+</head>
+<body>
+  <nav class="navbar fixed-top bg-body-tertiary">
+       
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div id="navb" class="container-fluid">
+        <img id="img-nav" class="img-nav"  src="../img/logo.png" alt="">
+        <form id="form-nav" class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+        <button id="btn-nav-hamburger" class=" navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+          <div class=" collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./inicio.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./sobre-nosotros.html">Sobre Nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Carrito</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contacto</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  CATEGORIAS
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="./cat-mouses.html">MOUSES</a></li>
+                  <li><a class="dropdown-item" href="./cat-parlantes.html">PARLANTES</a></li>
+                  <li><a class="dropdown-item" href="#">Ram</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+      </nav>
+  </nav>
+  <div class="custom-scrollbar"></div>
+    <div id="carouselExampleControls" class="carousel slide" >
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="../img/Carroucel1.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="../img/Carroucel2.jpg" class="d-block w-100 " alt="...">
+          </div>
+          <div class="carousel-item slide">
+            <img src="../img/Carroucel3.jpg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <div class="title"> 
+        <h1 class="titulos">PRODUCTOS</h1>
+        <h5 class="titulos">Ver Todos</h5>
+      </div>
+     <div class="countainer-fluid"  >
+      <div class="row ro">
+      <div class="card col-sm-4 col-lg-2"   id="tarjet">
+        <a href="./pages/producto1.html">
+          <img src="../img/P-ram.jpg" class="card-img-top" alt="...">
+        </a>
+        <div class="card-body">
+          <h2 class="card-title ">$9.000</h2>
+          <h3 class=" fs-6">12x $950</h3>
+          <h4>Envio Gratis</h4>
+          <p class="card-text">Ram ddr4 8gb 2666mhz rgb</p>
+        
+        </div>
+      </div>
+      <div class="card col-sm-4 col-lg-2"   id="tarjet">
+        <a href="./pages/producto1.html">
+          <img src="../img/P-fuente.jpg" class="card-img-top" alt="...">
+        </a>
+        <div class="card-body">
+          <h2 class="card-title ">$8500</h2>
+          <h3 class=" fs-6">12x $950</h3>
+          <h4>Envio Gratis</h4>
+          <p class="card-text">Fuente Noga 750w certificada</p>
+          
+        </div>
+      </div>
+      <div class="card col-sm-4 col-lg-2 "   id="tarjet">
+        <a href="./pages/producto1.html">
+          <img src="../img/P-monitor.jpg" class="card-img-top" alt="...">
+        </a>
+        <div class="card-body">
+          <h2 class="card-title">$25.000</h2>
+          <h3 class=" fs-6">12x $2250</h3>
+          <h4>Envio Gratis</h4>
+          <p class="card-text">Monitor Curvo de 120fps de 1400x850</p>
+        
+        </div>
+      </div>
+      <div class="card col-sm-4 col-lg-2"  id="tarjet" >
+        <a href="./pages/producto1.html">
+          <img src="../img/P-auris.jpg" class="card-img-top" alt="...">
+        </a>
+        <div class="card-body">
+          <h2 class="card-title">$7.500</h2>
+          <h3 class=" fs-6">12x $850</h3>
+          <h4>Envio Gratis</h4>
+          <p class="card-text">Auriculares con rgb</p>
+          
+        </div>
+      </div>
+      <div class="card col-sm-4 col-lg-2 "  id="tarjet" >
+        <a href="./pages/producto1.html">
+          <img src="../img/P-escritorio.jpg" class="card-img-top" alt="...">
+        </a>
+        <div class="card-body">
+          <h2 class="card-title">$22.000</h2>
+          <h3 class=" fs-6">12x $1950</h3>
+          <h4>Envio Gratis</h4>
+          <p class="card-text">Escritorio 160x90</p>
+        
+        </div>
+      </div>
+      <div class="card col-sm-4 col-lg-2" id="tarjet" >
+        <a href="./pages/producto1.html">
+          <img src="../img/P-mouse.jpg" class="card-img-top" alt="...">
+        </a>
+        <div class="card-body">
+          <h2 class="card-title">$6.000</h2>
+          <h3 class=" fs-6">6x $1150</h3>
+          <h4>Envio Gratis</h4>
+          <p class="card-text">Mouse optico 2400dpi</p>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="title"> 
+    <h1 class="titulos">SERVICIOS</h1>
+    <h5 class="titulos">Ver Todos</h5>
+  </div>
+  <div class="countainer-fluid"  >
+   <div class="row ro">
+   <div class="card col-sm-4 col-lg-2"   id="tarjet">
+     <a href="./pages/producto1.html">
+      <img src="../img/S-limpiezasoftware.jpg" class="card-img-top" alt="...">
+     </a>
+     <div class="card-body">
+       <h2 class="card-title">$6.000</h2>
+       <h3 class=" fs-6">6x $1.150</h3>
+       <p class="card-text">Limpieza de software</p>
+     
+     </div>
+   </div>
+   <div class="card col-sm-4 col-lg-2"   id="tarjet">
+    <a href="./pages/producto1.html">     
+      <img src="../img/S-limpiezahardware.jpg" class="card-img-top" alt="...">
+    </a>
+     <div class="card-body">
+       <h2 class="card-title">$5.500</h2>
+       <h3 class=" fs-6">6x $900</h3>
+       <p class="card-text">Limpieza de hardware</p>
+       
+     </div>
+   </div>
+   <div class="card col-sm-4 col-lg-2 "   id="tarjet">
+     <a href="./pages/producto1.html">
+      <img src="../img/S-sistemaoperativo.jpg" class="card-img-top" alt="...">
+     </a>
+     <div class="card-body">
+       <h2 class="card-title">$5000</h2>
+       <h3 class=" fs-6">6x $880</h3>
+       <p class="card-text">Instalacion de sistema operativo</p>
+     
+     </div>
+   </div>
+   <div class="card col-sm-4 col-lg-2"  id="tarjet" >
+     <a href="./pages/producto1.html">
+      <img src="../img/S-programas.jpg" class="card-img-top" alt="...">
+     </a>
+     <div class="card-body">
+       <h2 class="card-title">$2.000</h2>
+       <h3 class=" fs-6">6x $450</h3>
+       <p class="card-text">Instalacion de programas</p>
+       
+     </div>
+   </div>
+   <div class="card col-sm-4 col-lg-2 "  id="tarjet" >
+   <a href="./pages/producto1.html">
+    <img src="../img/S-actualizacionhard.jpg" class="card-img-top" alt="...">
+   </a>
+     <div class="card-body">
+      <h2 class="card-title">Actualización</h2>
+       <p class="card-text">Combos de actualizacion personalizados</p>
+     
+     </div>
+   </div>
+  
+   <div class="card col-sm-4 col-lg-2" id="tarjet" >
+     <a href="./pages/producto1.html">
+      <img src="../img/S-reparaciones.jpg" class="card-img-top" alt="...">
+     </a>
+     <div class="card-body">
+       <h2 class="card-title">Reparaciones</h2>
+       <p class="card-text">Reparaciones en general </p>
+     </div>
+   </div>
+ </div>
+</div>
+<div class="title"> 
+  <h1 class="titulos">CATEGORIAS</h1>
+  <h5 class="titulos">Ver Todas</h5>
+</div>
+ <div class="categorias">
+  
+  <div class="contenedor-categorias">
+    <div class="categoria">
+      <i class="bi bi-joystick"></i>
+      <h2>Games</h2>
+    </div>
+    <div class="categoria">
+      <i class="bi bi-laptop"></i>
+      <h2>Laptop</h2>
+    </div>
+    <div class="categoria">
+      <i class="bi bi-display"></i>
+      <h2>Display</h2>
+    </div>
+    <div class="categoria">
+      <i class="bi bi-cpu"></i>
+      <h2>Procesador</h2>
+    </div>
+    <div class="categoria">
+      <i class="bi bi-keyboard"></i>
+      <h2>Teclados</h2>
+    </div>
+    <div class="categoria">
+      <i class="bi bi-mouse"></i>
+      <h2>Mouse</h2>
+    </div>
+    <div class="categoria">
+      <i class="bi bi-mic"></i>
+      <h2>Microfono</h2>
+    </div>
+    <div class="categoria">
+      <i class="bi bi-speaker"></i>
+      <h2>Speaker</h2>
+    </div>
+  </div>
+ </div>
+
+
+ <footer>
+  <div class="column">
+   
+      <img src="./img/logo.png" alt="Logo del Sitio">
+  </div>
+  <div class="column">
+      <h2>Redes Sociales</h2>
+      <ul class="redes-list">
+          <li class="redes-item"><i class="bi bi-facebook"></i></li>
+          <li class="redes-item"><i class="bi bi-whatsapp"></i></li>
+          <li class="redes-item"><i class="bi bi-instagram"></i></li>
+      </ul>
+  </div>
+  <div class="column">
+      <h2> © Todos los derechos reservados </h2>
+      
+  </div>
+</footer>
+
+
+
+
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/simplebar/5.3.4/simplebar.min.js"></script>
+</body>
+</html>
