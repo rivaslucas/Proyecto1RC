@@ -1,0 +1,57 @@
+
+.mod{
+    border: 1px solid rgb(222, 62, 105);
+    color: bolder black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    text-decoration: none;
+    font-style: oblique;
+    background: url(../img/FONDOO.jpg);
+}
+
+.modal-title{
+    color: bolder black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: larger;
+    font-weight: bolder;
+    text-decoration: none ;
+}
+
+.formulari{
+    font-size: larger;
+    color: #eceaea;
+}
+
+.registrarse{
+margin-left:25%;
+    
+}
+p{
+    margin-left: -10%;
+}
+.btn-primary{
+    color: aliceblue;
+    font-style: oblique;
+    font-size: larger;
+    border: 3px solid aliceblue;
+    background-color:rgb(222, 62, 105) ;
+    font-weight: bolder;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+}
+
+.btn-info{
+    align-items: center;
+    justify-content: center;
+    font-style: oblique;
+    border: 5px solid aliceblue;
+    font-weight: bolder;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+}
+
+.btn-info:hover{
+    background-color: rgb(30, 30, 86);
+}
+
+

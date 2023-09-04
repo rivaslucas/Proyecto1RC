@@ -7,10 +7,57 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simplebar/5.3.4/simplebar.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./css/nav.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/registroylogin.css ">
 
-    <script src="./js/index.js2"></script>
+    <script src="./js/index.js"></script>
 </head>
 <body>
+  <nav class="navbar fixed-top bg-body-tertiary">
+       
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div id="navb" class="container-fluid">
+        <img id="img-nav" class="img-nav"  src="./img/logo.png" alt="">
+        <form id="form-nav" class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+        <button id="btn-nav-hamburger" class=" navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+          <div class=" collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/sobre-nosotros.html">Sobre Nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Carrito</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contacto</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  CATEGORIAS
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="./pages/cat-mouses.html">MOUSES</a></li>
+                  <li><a class="dropdown-item" href="./pages/cat-parlantes.html">PARLANTES</a></li>
+                  <li><a class="dropdown-item" href="#">Ram</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <button id="ini" type="button" class="inicio btn btn-secondary btn-lg " data-bs-toggle="modal" data-bs-target="#exampleModal2">INICIAR SESION</button>
+
+        </div>
+      </nav>
+  </nav>
   <div class="custom-scrollbar"></div>
     <div id="carouselExampleControls" class="carousel slide" >
         <div class="carousel-inner">
@@ -38,7 +85,7 @@
         <h5 class="titulos">Ver Todos</h5>
       </div>
      <div class="countainer-fluid"  >
-      <div class="row">
+      <div class="row ro">
       <div class="card col-sm-4 col-lg-2"   id="tarjet">
         <a href="./pages/producto1.html">
           <img src="./img/P-ram.jpg" class="card-img-top" alt="...">
@@ -118,7 +165,7 @@
     <h5 class="titulos">Ver Todos</h5>
   </div>
   <div class="countainer-fluid"  >
-   <div class="row">
+   <div class="row ro">
    <div class="card col-sm-4 col-lg-2"   id="tarjet">
      <a href="./pages/producto1.html">
       <img src="./img/S-limpiezasoftware.jpg" class="card-img-top" alt="...">
@@ -186,78 +233,472 @@
  </div>
 </div>
 <div class="title"> 
-  <h1 class="titulos">OFERTAS</h1>
+  <h1 class="titulos">CATEGORIAS</h1>
   <h5 class="titulos">Ver Todas</h5>
 </div>
- 
-  <div class="countainer-fluid"  >
-    <div class="row">
-    <div class="card col-sm-4 col-lg-2"   id="tarjet">
-      <a href="./pages/producto1.html">
-       <img src="./img/S-limpiezasoftware.jpg" class="card-img-top" alt="...">
-      </a>
-      <div class="card-body">
-        <h2 class="card-title">$6.000</h2>
-        <h3 class=" fs-6">6x $1.150</h3>
-        <p class="card-text">Limpieza de software</p>
-      
-      </div>
+ <div class="categorias">
+  
+  <div class="contenedor-categorias">
+    <div class="categoria">
+      <i class="bi bi-joystick"></i>
+      <h2>Games</h2>
     </div>
-    <div class="card col-sm-4 col-lg-2"   id="tarjet">
-     <a href="./pages/producto1.html">     
-       <img src="./img/S-limpiezahardware.jpg" class="card-img-top" alt="...">
-     </a>
-      <div class="card-body">
-        <h2 class="card-title">$5.500</h2>
-        <h3 class=" fs-6">6x $900</h3>
-        <p class="card-text">Limpieza de hardware</p>
-        
-      </div>
+    <div class="categoria">
+      <i class="bi bi-laptop"></i>
+      <h2>Laptop</h2>
     </div>
-    <div class="card col-sm-4 col-lg-2 "   id="tarjet">
-      <a href="./pages/producto1.html">
-       <img src="./img/S-sistemaoperativo.jpg" class="card-img-top" alt="...">
-      </a>
-      <div class="card-body">
-        <h2 class="card-title">$5000</h2>
-        <h3 class=" fs-6">6x $880</h3>
-        <p class="card-text">Instalacion de sistema operativo</p>
-      
-      </div>
+    <div class="categoria">
+      <i class="bi bi-display"></i>
+      <h2>Display</h2>
     </div>
-    <div class="card col-sm-4 col-lg-2"  id="tarjet" >
-      <a href="./pages/producto1.html">
-       <img src="./img/S-programas.jpg" class="card-img-top" alt="...">
-      </a>
-      <div class="card-body">
-        <h2 class="card-title">$2.000</h2>
-        <h3 class=" fs-6">6x $450</h3>
-        <p class="card-text">Instalacion de programas</p>
-        
-      </div>
+    <div class="categoria">
+      <i class="bi bi-cpu"></i>
+      <h2>Procesador</h2>
     </div>
-    <div class="card col-sm-4 col-lg-2 "  id="tarjet" >
-    <a href="./pages/producto1.html">
-     <img src="./img/S-actualizacionhard.jpg" class="card-img-top" alt="...">
-    </a>
-      <div class="card-body">
-       <h2 class="card-title">Actualización</h2>
-        <p class="card-text">Combos de actualizacion personalizados</p>
-      
-      </div>
+    <div class="categoria">
+      <i class="bi bi-keyboard"></i>
+      <h2>Teclados</h2>
     </div>
-   
-    <div class="card col-sm-4 col-lg-2" id="tarjet" >
-      <a href="./pages/producto1.html">
-       <img src="./img/S-reparaciones.jpg" class="card-img-top" alt="...">
-      </a>
-      <div class="card-body">
-        <h2 class="card-title">Reparaciones</h2>
-        <p class="card-text">Reparaciones en general </p>
-      </div>
+    <div class="categoria">
+      <i class="bi bi-mouse"></i>
+      <h2>Mouse</h2>
+    </div>
+    <div class="categoria">
+      <i class="bi bi-mic"></i>
+      <h2>Microfono</h2>
+    </div>
+    <div class="categoria">
+      <i class="bi bi-speaker"></i>
+      <h2>Speaker</h2>
     </div>
   </div>
  </div>
+
+
+ <footer>
+  <div class="column">
+   
+      <img src="./img/logo.png" alt="Logo del Sitio">
+  </div>
+  <div class="column">
+      <h2>Redes Sociales</h2>
+      <ul class="redes-list">
+          <li class="redes-item"><i class="bi bi-facebook"></i></li>
+          <li class="redes-item"><i class="bi bi-whatsapp"></i></li>
+          <li class="redes-item"><i class="bi bi-instagram"></i></li>
+      </ul>
+  </div>
+  <div class="column">
+      <h2> © Todos los derechos reservados </h2>
+      
+  </div>
+</footer>
+
+<!-- Modal1 -->
+<div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 class="modal-titulo fs-4" id="exampleModalLabel">REGISTRATE!</h2>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+
+      <div class="modal-body">
+        <div class="container-fluid mod">
+            <form class="formulari">
+
+              <fieldset>
+
+                <div class="row mb-3">
+                    <div class="col-6">
+                        <label for="nombre" class="col-6 col-form-label">Nombre:</label>
+                        <input type="text" class="form-control" id="Nombre" placeholder="Ingrese un Nombre" required>
+                    </div>
+                </div>
+
+                <div class="row mb-3">
+                    <div class="col-6">
+                        <label for="apellido" class="col-6 col-form-label">Apellido:</label>
+                        <input type="text" class="form-control" id="Apellido" placeholder="Ingrese un Apellido" required>
+                    </div>
+                </div>
+
+                <div class="row mb-3">    
+                    <div class="col-9">
+                        <label for="fecha de nacimiento" class="col-9 col-form-label">Fecha de Nacimiento:</label>
+                        <input type="date" class="form-control" id="Fecha de Nacimiento" required><br>
+                    </div>
+                </div>
+
+                <div class="row mb-3">   
+                  <div class="col-9">
+                    <label for="sexo" class="col-9 col-form-label">Seleccione sexo del Usuario:</label><br>
+                        <input type="radio" name="sexo" value="1" class="color" required/> Varon <br>
+                        <input type="radio" name="sexo" value="2" class="color" required/> Mujer <br>
+                        <input type="radio" name="sexo" value="3" class="color" required/> Prefiero no decirlo <br><br>
+                  </div>
+                </div>
+
+                <div class="row mb-3">   
+                  <div class="col-9">
+                      <label for="correo" class="col-9 col-form-label">Correo Electronico:</label>
+                      <input type="email" class="form-control" id="E-mail" placeholder="example@gmail.com" required>
+                  </div>
+                </div>
+
+                <div class="row mb-3">   
+                  <div class="col-9">
+                      <label for="telefono" class="col-9 col-form-label">Telefono:</label>
+                      <input type="tel" class="form-control" id="Telefono" placeholder="(0381)4652763" required>
+                  </div>
+                </div>
+
+                <div class="row mb-3">   
+                  <div class="col-9">
+                      <label for="direccion" class="col-9 col-form-label">Direccion:</label>
+                      <input type="text" class="form-control" id="Direccion" placeholder="Cristo Rey 100" required>
+                  </div>
+                </div>
+
+                <div class="row mb-3">   
+                  <div class="col-9">
+                      <label for="direccion" class="col-9 col-form-label">Codigo Postal:</label>
+                      <input type="text" class="form-control" id="Codigo Postal" placeholder="4520" minlength="2" maxlength="7" required>
+                  </div>
+                </div>
+
+                <div class="row mb-3">
+                    <div class="col-9">
+                      <div>
+                        <label>Pai­s de Nacimiento del Usuario:</label>
+                        <select name="pais" class="color">
+                        <option value="AF">Afganistan</option>
+                        <option value="AL">Albania</option>
+                        <option value="DE">Alemania</option>
+                        <option value="AD">Andorra</option>
+                        <option value="AO">Angola</option>
+                        <option value="AI">Anguilla</option>
+                        <option value="AQ">AntÃ¡rtida</option>
+                        <option value="AG">Antigua y Barbuda</option>
+                        <option value="AN">Antillas Holandesas</option>
+                        <option value="SA">Arabia Saudita­</option>
+                        <option value="DZ">Argelia</option>
+                        <option value="AR">Argentina</option>
+                        <option value="AM">Armenia</option>
+                        <option value="AW">Aruba</option>
+                        <option value="AU">Australia</option>
+                        <option value="AT">Austria</option>
+                        <option value="AZ">Azerbaiyarn</option>
+                        <option value="BS">Bahamas</option>
+                        <option value="BH">Bahrein</option>
+                        <option value="BD">Bangladesh</option>
+                        <option value="BB">Barbados</option>
+                        <option value="BE">Belgica</option>
+                        <option value="BZ">Belice</option>
+                        <option value="BJ">Benin</option>
+                        <option value="BM">Bermudas</option>
+                        <option value="BY">Bielorrusia</option>
+                        <option value="MM">Birmania</option>
+                        <option value="BO">Bolivia</option>
+                        <option value="BA">Bosnia y Herzegovina</option>
+                        <option value="BW">Botswana</option>
+                        <option value="BR">Brasil</option>
+                        <option value="BN">Brunei</option>
+                        <option value="BG">Bulgaria</option>
+                        <option value="BF">Burkina Faso</option>
+                        <option value="BI">Burundi</option>
+                        <option value="BT">Buton</option>
+                        <option value="CV">Cabo Verde</option>
+                        <option value="KH">Camboya</option>
+                        <option value="CM">Camerun</option>
+                        <option value="CA">Canada</option>
+                        <option value="TD">Chad</option>
+                        <option value="CL">Chile</option>
+                        <option value="CN">China</option>
+                        <option value="CY">Chipre</option>
+                        <option value="VA">Ciudad del Vaticano (Santa Sede)</option>
+                        <option value="CO">Colombia</option>
+                        <option value="KM">Comores</option>
+                        <option value="CG">Congo</option>
+                        <option value="CD">Congo, Republica Democratica del</option>
+                        <option value="KR">Corea</option>
+                        <option value="KP">Corea del Norte</option>
+                        <option value="CI">Costa de Marfi­l</option>
+                        <option value="CR">Costa Rica</option>
+                        <option value="HR">Croacia (Hrvatska)</option>
+                        <option value="CU">Cuba</option>
+                        <option value="DK">Dinamarca</option>
+                        <option value="DJ">Djibouti</option>
+                        <option value="DM">Dominica</option>
+                        <option value="EC">Ecuador</option>
+                        <option value="EG">Egipto</option>
+                        <option value="SV">El Salvador</option>
+                        <option value="AE">Emiratos arabes Unidos</option>
+                        <option value="ER">Eritrea</option>
+                        <option value="SI">Eslovenia</option>
+                        <option value="ES" selected>España</option>
+                        <option value="US">Estados Unidos</option>
+                        <option value="EE">Estonia</option>
+                        <option value="ET">Etiopia</option>
+                        <option value="FJ">Fiji</option>
+                        <option value="PH">Filipinas</option>
+                        <option value="FI">Finlandia</option>
+                        <option value="FR">Francia</option>
+                        <option value="GA">Gaban</option>
+                        <option value="GM">Gambia</option>
+                        <option value="GE">Georgia</option>
+                        <option value="GH">Ghana</option>
+                        <option value="GI">Gibraltar</option>
+                        <option value="GD">Granada</option>
+                        <option value="GR">Grecia</option>
+                        <option value="GL">Groenlandia</option>
+                        <option value="GP">Guadalupe</option>
+                        <option value="GU">Guam</option>
+                        <option value="GT">Guatemala</option>
+                        <option value="GY">Guayana</option>
+                        <option value="GF">Guayana Francesa</option>
+                        <option value="GN">Guinea</option>
+                        <option value="GQ">Guinea Ecuatorial</option>
+                        <option value="GW">Guinea-Bissau</option>
+                        <option value="HT">Haita­</option>
+                        <option value="HN">Honduras</option>
+                        <option value="HU">Hungria</option>
+                        <option value="IN">India</option>
+                        <option value="ID">Indonesia</option>
+                        <option value="IQ">Irak</option>
+                        <option value="IR">IrÃ¡n</option>
+                        <option value="IE">Irlanda</option>
+                        <option value="BV">Isla Bouvet</option>
+                        <option value="CX">Isla de Christmas</option>
+                        <option value="IS">Islandia</option>
+                        <option value="KY">Islas CaimÃ¡n</option>
+                        <option value="CK">Islas Cook</option>
+                        <option value="CC">Islas de Cocos o Keeling</option>
+                        <option value="FO">Islas Faroe</option>
+                        <option value="HM">Islas Heard y McDonald</option>
+                        <option value="FK">Islas Malvinas</option>
+                        <option value="MP">Islas Marianas del Norte</option>
+                        <option value="MH">Islas Marshall</option>
+                        <option value="UM">Islas menores de Estados Unidos</option>
+                        <option value="PW">Islas Palau</option>
+                        <option value="SB">Islas SalomÃ³n</option>
+                        <option value="SJ">Islas Svalbard y Jan Mayen</option>
+                        <option value="TK">Islas Tokelau</option>
+                        <option value="TC">Islas Turks y Caicos</option>
+                        <option value="VI">Islas VÃ­rgenes (EEUU)</option>
+                        <option value="VG">Islas VÃ­rgenes (Reino Unido)</option>
+                        <option value="WF">Islas Wallis y Futuna</option>
+                        <option value="IL">Israel</option>
+                        <option value="IT">Italia</option>
+                        <option value="JM">Jamaica</option>
+                        <option value="JP">JapÃ³n</option>
+                        <option value="JO">Jordania</option>
+                        <option value="KZ">KazajistÃ¡n</option>
+                        <option value="KE">Kenia</option>
+                        <option value="KG">KirguizistÃ¡n</option>
+                        <option value="KI">Kiribati</option>
+                        <option value="KW">Kuwait</option>
+                        <option value="LA">Laos</option>
+                        <option value="LS">Lesotho</option>
+                        <option value="LV">Letonia</option>
+                        <option value="LB">LÃ­bano</option>
+                        <option value="LR">Liberia</option>
+                        <option value="LY">Libia</option>
+                        <option value="LI">Liechtenstein</option>
+                        <option value="LT">Lituania</option>
+                        <option value="LU">Luxemburgo</option>
+                        <option value="MK">Macedonia, Ex-RepÃºblica Yugoslava de</option>
+                        <option value="MG">Madagascar</option>
+                        <option value="MY">Malasia</option>
+                        <option value="MW">Malawi</option>
+                        <option value="MV">Maldivas</option>
+                        <option value="ML">MalÃ­</option>
+                        <option value="MT">Malta</option>
+                        <option value="MA">Marruecos</option>
+                        <option value="MQ">Martinica</option>
+                        <option value="MU">Mauricio</option>
+                        <option value="MR">Mauritania</option>
+                        <option value="YT">Mayotte</option>
+                        <option value="MX">MÃ©xico</option>
+                        <option value="FM">Micronesia</option>
+                        <option value="MD">Moldavia</option>
+                        <option value="MC">MÃ³naco</option>
+                        <option value="MN">Mongolia</option>
+                        <option value="MS">Montserrat</option>
+                        <option value="MZ">Mozambique</option>
+                        <option value="NA">Namibia</option>
+                        <option value="NR">Nauru</option>
+                        <option value="NP">Nepal</option>
+                        <option value="NI">Nicaragua</option>
+                        <option value="NE">NÃ­ger</option>
+                        <option value="NG">Nigeria</option>
+                        <option value="NU">Niue</option>
+                        <option value="NF">Norfolk</option>
+                        <option value="NO">Noruega</option>
+                        <option value="NC">Nueva Caledonia</option>
+                        <option value="NZ">Nueva Zelanda</option>
+                        <option value="OM">OmÃ¡n</option>
+                        <option value="NL">PaÃ­ses Bajos</option>
+                        <option value="PA">PanamÃ¡</option>
+                        <option value="PG">PapÃºa Nueva Guinea</option>
+                        <option value="PK">PaquistÃ¡n</option>
+                        <option value="PY">Paraguay</option>
+                        <option value="PE">PerÃº</option>
+                        <option value="PN">Pitcairn</option>
+                        <option value="PF">Polinesia Francesa</option>
+                        <option value="PL">Polonia</option>
+                        <option value="PT">Portugal</option>
+                        <option value="PR">Puerto Rico</option>
+                        <option value="QA">Qatar</option>
+                        <option value="UK">Reino Unido</option>
+                        <option value="CF">RepÃºblica Centroafricana</option>
+                        <option value="CZ">RepÃºblica Checa</option>
+                        <option value="ZA">RepÃºblica de SudÃ¡frica</option>
+                        <option value="DO">RepÃºblica Dominicana</option>
+                        <option value="SK">RepÃºblica Eslovaca</option>
+                        <option value="RE">ReuniÃ³n</option>
+                        <option value="RW">Ruanda</option>
+                        <option value="RO">Rumania</option>
+                        <option value="RU">Rusia</option>
+                        <option value="EH">Sahara Occidental</option>
+                        <option value="KN">Saint Kitts y Nevis</option>
+                        <option value="WS">Samoa</option>
+                        <option value="AS">Samoa Americana</option>
+                        <option value="SM">San Marino</option>
+                        <option value="VC">San Vicente y Granadinas</option>
+                        <option value="SH">Santa Helena</option>
+                        <option value="LC">Santa LucÃ­a</option>
+                        <option value="ST">Santo TomÃ© y PrÃ­ncipe</option>
+                        <option value="SN">Senegal</option>
+                        <option value="SC">Seychelles</option>
+                        <option value="SL">Sierra Leona</option>
+                        <option value="SG">Singapur</option>
+                        <option value="SY">Siria</option>
+                        <option value="SO">Somalia</option>
+                        <option value="LK">Sri Lanka</option>
+                        <option value="PM">St Pierre y Miquelon</option>
+                        <option value="SZ">Suazilandia</option>
+                        <option value="SD">SudÃ¡n</option>
+                        <option value="SE">Suecia</option>
+                        <option value="CH">Suiza</option>
+                        <option value="SR">Surinam</option>
+                        <option value="TH">Tailandia</option>
+                        <option value="TW">TaiwÃ¡n</option>
+                        <option value="TZ">Tanzania</option>
+                        <option value="TJ">TayikistÃ¡n</option>
+                        <option value="TF">Territorios franceses del Sur</option>
+                        <option value="TP">Timor Oriental</option>
+                        <option value="TG">Togo</option>
+                        <option value="TO">Tonga</option>
+                        <option value="TT">Trinidad y Tobago</option>
+                        <option value="TN">TÃºnez</option>
+                        <option value="TM">TurkmenistÃ¡n</option>
+                        <option value="TR">TurquÃ­a</option>
+                        <option value="TV">Tuvalu</option>
+                        <option value="UA">Ucrania</option>
+                        <option value="UG">Uganda</option>
+                        <option value="UY">Uruguay</option>
+                        <option value="UZ">UzbekistÃ¡n</option>
+                        <option value="VU">Vanuatu</option>
+                        <option value="VE">Venezuela</option>
+                        <option value="VN">Vietnam</option>
+                        <option value="YE">Yemen</option>
+                        <option value="YU">Yugoslavia</option>
+                        <option value="ZM">Zambia</option>
+                        <option value="ZW">Zimbabue</option>
+                        </select>
+                      </div>
+                    </div>
+                </div>
+              </fieldset>
+
+              <div class="modal-footer">
+                <a class="btn btn-primary"type="submit" id="registro" name="button" href="./pages/inicio.html">Enviar</a>
+                <a class="btn btn-primary"type="reset" id="registro" href="./pages/inicio.html">Borrar</a>
+
+                
+              </div>
+          
+            </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal2 -->
+<div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title fs-5" id="exampleModalLabel">INICIAR SESION!</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+
+        <div class="modal-body">
+          <div class="container-fluid mod">
+              <form class="formulari">
+                <fieldset>
+                 <div class="row mb-3">
+                      <div class="col-9">
+                          <label for="usuario" class="col-3 col-form-label">Usuario:</label>
+                          <input type="text" class="form-control" id="Usuario" placeholder="Ingrese un Usuario" required>
+                      </div>
+                 </div>
+
+                 <div class="row mb-3">
+                      <div class="col-9">
+                          <label for="password" class="col-3 col-form-label">Contraseña:</label>
+                          <input type="password" class="form-control" id="Password" placeholder="Ingrese una Contraseña" required>
+                      </div>
+                 </div>
+
+                 <div class="row mb-3">
+                      <div class="col-9">
+                        <a href="#">¿Olvido su contraseña?</a>
+                      </div>
+                 </div>
+
+                 <div class="modal-footer">
+                  <button type="submit" class="btn btn-primary" name="button">iniciar sesion</button>
+                  <input type="reset" class="btn btn-primary" value="Borrar">
+                </div><br>
+                <div class="registrarse">
+                <p>Si no tienes cuenta registrate</p>
+                <button  type="button" class="btn btn-primary bg-success " data-bs-toggle="modal" data-bs-target="#exampleModal1">REGISTRARSE</button>
+                <br><br>
+              </div>
+
+                 <div class="row mb-3 accedermedianteredes">
+                  <div class="col-9">
+                    <a href="https://accounts.google.com/v3/signin/identifier?opparams=%253Fopenid.realm%2526ss_domain%253Dhttps%25253A%25252F%25252Fdevelopers-dot-devsite-v2-prod.appspot.com&dsh=S-1224305844%3A1693674860550202&client_id=351360855136-c65vr13tal2in9b9m1hdmp5dgr4rie3l.apps.googleusercontent.com&fetch_basic_profile=true&gsiwebsdk=2&include_granted_scopes=true&o2v=1&redirect_uri=storagerelay%3A%2F%2Fhttps%2Fdevelopers-dot-devsite-v2-prod.appspot.com%3Fid%3Dauth415387&response_type=permission+id_token&scope=email+profile+openid&service=lso&flowName=GeneralOAuthFlow&continue=https%3A%2F%2Faccounts.google.com%2Fsignin%2Foauth%2Fconsent%3Fauthuser%3Dunknown%26part%3DAJi8hAOK6o-4Z2SCTuiedQAjq8ZTY8W2od3sqs-u66cg9fdI57bC9AK3vQa5X9-HOG6l4I3Cu4FFbMsPt6dl0EeXUsrI4qR4We9Gq83XeIdJ82qYKyBq7XMmGAS3XyiyOzVYD6nnbraukyXaFozri4xWBMsnY_f0WNEG0iuKpCKDFQBFJHNDv2KtVWrIuWM1WO6tqYmoPKiBzC4lG5V8uBKsATs74t-DMf1UJ-_gzv4X31-cYQUwCeP9PNFv1mxlsiQv3XrFbwIP03RcXtsqKh-OzoLogPupCLTqmklNh_hyTgWjLVJ8I4PKHneEicnOyKOL0kNna7cc8ImxfcGVadfmd3xN-LfD_QQQLwD1ipoLmM0AnnqCMtav1_d9Po3nopviCa9EziNcrR1MiAUE830adjAlNaf04gMPfB6e4pxu7g9B4TnvbXMyLakgz4pawF8fJk1ZTwfO4WHDgHadO18VTBmuVtLwgrXy_3n9V17GC7yQsH2k0MJtx0Rbm0ldxvX5ahUptwEu%26as%3DS-1224305844%253A1693674860550202%26client_id%3D351360855136-c65vr13tal2in9b9m1hdmp5dgr4rie3l.apps.googleusercontent.com%23&app_domain=https%3A%2F%2Fdevelopers-dot-devsite-v2-prod.appspot.com&rart=ANgoxcewmtdg-NOesrN-7dXxAaBjnCXBtTgK5Numfk0UTJfl3T8GDsChS584aCrMwynrgkUooLHOh-uleukTThbZxOxcPY4duw"><button type="button" class="btn btn-info">
+                      <i class="bi bi-google"></i> Acceder con Google
+                    </button></a>
+                  </div>
+                 </div>
+
+
+                 <div class="row mb-3">
+                  <div class="col-9">
+                    <a href="https://www.facebook.com/login.php?skip_api_login=1&api_key=136494494209&kid_directed_site=0&app_id=136494494209&signed_next=1&next=https%3A%2F%2Fwww.facebook.com%2Fv6.0%2Fdialog%2Foauth%3Fapp_id%3D136494494209%26cbt%3D1693679356752%26channel_url%3Dhttps%253A%252F%252Fstaticxx.facebook.com%252Fx%252Fconnect%252Fxd_arbiter%252F%253Fversion%253D46%2523cb%253Df38af60c2f42c04%2526domain%253Des.scribd.com%2526is_canvas%253Dfalse%2526origin%253Dhttps%25253A%25252F%25252Fes.scribd.com%25252Ffb80fe8cfcc60c%2526relation%253Dopener%26client_id%3D136494494209%26display%3Dpopup%26domain%3Des.scribd.com%26e2e%3D%257B%257D%26fallback_redirect_uri%3Dhttps%253A%252F%252Fes.scribd.com%252F%26locale%3Den_US%26logger_id%3Df153a2e86fdc3c%26origin%3D1%26redirect_uri%3Dhttps%253A%252F%252Fstaticxx.facebook.com%252Fx%252Fconnect%252Fxd_arbiter%252F%253Fversion%253D46%2523cb%253Df131936db39c734%2526domain%253Des.scribd.com%2526is_canvas%253Dfalse%2526origin%253Dhttps%25253A%25252F%25252Fes.scribd.com%25252Ffb80fe8cfcc60c%2526relation%253Dopener%2526frame%253Df2adf779b501d12%26response_type%3Dtoken%252Csigned_request%252Cgraph_domain%26scope%3Demail%252Cpublic_profile%26sdk%3Djoey%26version%3Dv6.0%26ret%3Dlogin%26fbapp_pres%3D0%26tp%3Dunspecified&cancel_url=https%3A%2F%2Fstaticxx.facebook.com%2Fx%2Fconnect%2Fxd_arbiter%2F%3Fversion%3D46%23cb%3Df131936db39c734%26domain%3Des.scribd.com%26is_canvas%3Dfalse%26origin%3Dhttps%253A%252F%252Fes.scribd.com%252Ffb80fe8cfcc60c%26relation%3Dopener%26frame%3Df2adf779b501d12%26error%3Daccess_denied%26error_code%3D200%26error_description%3DPermissions%2Berror%26error_reason%3Duser_denied&display=popup&locale=es_LA&pl_dbl=0"><button type="button" class="btn btn-info">
+                      <i class="bi bi-facebook"></i> Acceder con facebook
+                    </button></a>
+                  </div>
+                 </div>
+
+                
+
+                </fieldset>
+              </form>
+          </div>
+        </div>
+
+      </div>
+    </div>
+</div>
+
+
+
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/simplebar/5.3.4/simplebar.min.js"></script>
 </body>

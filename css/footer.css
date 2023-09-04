@@ -1,0 +1,67 @@
+/* Estilos generales para el footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    margin-top: 20%;
+    padding-top: 3%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* Estilos para cada columna */
+.column {
+    flex: 1;
+    text-align: center;
+    padding: 1%;
+
+}
+.redes-list{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 15%;
+    margin-right: 15%;
+  
+}
+i{
+   font-size: 2rem;
+}
+
+i:hover{
+   cursor: pointer;
+   color: red;
+   text-shadow:0 0 20px #fff;
+   
+}
+
+
+/* Estilos para dispositivos pequeños (1 columna) */
+@media (max-width: 576px) {
+    .column {
+        flex-basis: 100%;
+    }
+    footer{
+        margin-top: 35%;
+    }
+}
+
+/* Estilos para dispositivos medianos (2 o 3 columnas) - Opcional */
+@media (min-width: 576px) {
+    .column {
+        flex-basis: 45%;
+        max-width: 45%;
+    }
+}
+
+/* Estilos para dispositivos grandes (3 columnas) */
+@media (min-width: 992px) {
+    .column {
+        flex-basis: 30%;
+        max-width: 30%;
+    }
+    footer{
+        margin-top: 15%;
+    }
+}

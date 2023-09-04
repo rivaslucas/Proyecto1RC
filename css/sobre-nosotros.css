@@ -1,0 +1,66 @@
+*{ 
+    margin: 0; 
+    box-sizing: border-box;
+}
+
+
+
+main{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    height: 100%;
+}
+
+h2{font-size: 2.7em;}
+p{font-size: 1.25em;}
+
+#equipo{
+    font-size: 1em;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 1px solid rgba(0,0,0,0.5);
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    color:black;
+    background-color: rgb(233, 65, 65)
+}
+
+#equipo:hover{
+ background-color: red;
+}
+
+.container{
+    max-width: 1400px;
+    margin: auto;
+}
+
+
+
+.container{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+footer{
+    margin: 0%;
+}
+#compugamer{
+padding: 0;
+margin: 0;}
+
+
+
+#compugamer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align:center ;
+    flex-direction: column;
+    height: 90vh;
+    color: white;
+    background-image:url('../img/sobre-nosotros/fondoequipo.jpg');
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center center;
+}
