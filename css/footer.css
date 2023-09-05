@@ -9,7 +9,11 @@ footer {
     justify-content: space-around;
     align-items: center;
 }
-
+ul{
+    & a{
+        color: white;
+    }
+}
 /* Estilos para cada columna */
 .column {
     flex: 1;
@@ -35,7 +39,11 @@ i:hover{
    text-shadow:0 0 20px #fff;
    
 }
-
+.column{
+    & img{
+        width: 50%;
+    }
+}
 
 /* Estilos para dispositivos pequeños (1 columna) */
 @media (max-width: 576px) {

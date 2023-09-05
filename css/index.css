@@ -62,6 +62,11 @@ h5{
     background-color: yellow;
     text-align: center;
     border: solid 3px black;
+   
+}
+a{
+    text-decoration: none;
+    color: black;
 }
 .categoria:hover{
     cursor:pointer ;
