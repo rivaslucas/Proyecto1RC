@@ -50,7 +50,21 @@ h5{
 .card{
     max-width: 100%;
 }
-
+footer{
+    margin-top: 20%;
+}
+.publicidad{
+    height: 10vh;
+}
+#publi{
+    margin-bottom: 40%;
+    height: 200px;
+    & .carousel-inner{
+        & .carousel-item{
+            & img{height: 30vw;}
+        } 
+    }
+}
 /*=========================================CATEGORIAS=======================================================*/
 
 .contenedor-categorias{
@@ -84,6 +98,9 @@ i{
 }
 
 @media (max-width:576px) {
+    #publi{
+        display: none;
+    }
     .card{
         width: 45vw !important;
         
@@ -112,6 +129,12 @@ i{
 }
 
 @media (min-width:577px) and (max-width:991px) {
+footer{
+    margin-top: 15%;
+}
+
+
+
     .ro{
         margin-left:5% ;
         grid-template-columns: repeat(3, 1fr);
