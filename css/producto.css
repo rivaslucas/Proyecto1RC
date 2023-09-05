@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap');
+
+
+main{
+    font-family:'Ubuntu';
+    margin: 0;
+    background-image:url(../img/contacto/fondo404.jpg);
+    color: aliceblue;
+    font-weight: bolder;
+    font-size: large;
+    display: flex;
+    flex-direction: column;
+    gap: 3%;
+    text-align: center;
+}
+
+
+footer{
+    padding: 0;
+    margin: 0;
+}
+.contenido{
+border-radius: 20px;
+width: 80%;
+margin-left: 10%;
+background-color: grey;
+
+
+
+}
+.arriba{
+    justify-content: center;
+    margin-bottom: 3%;
+    padding-top: 4%;
+}
+.abajo{
+    padding-bottom:4%;
+}
+#vaciar{
+    margin-left: 10%;
+}
+.contenido-izq{
+    margin-right: 20%;
+}
+.contenido.item{
+    margin-top: 1rem;
+}
+
+
+.form-group{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.form-group label{
+    width: 100px;
+    color: #333;
+    font-weight: bolder;
+}
+
+.form-group select{
+
+font-weight: bolder;
+border: 2px solid blue;
+
+background-color: #f7f7f7;
+outline: none;
+color: #333;
+}
+¡
+
+.caja{
+    width: 60px;
+    height: 50px;
+    font-weight: bolder;
+    border: 2px solid blue;
+    padding: 12px 15px;
+    background-color: #f7f7f7;
+    outline: none;
+    color: #333;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+¡
+
+
+
+
+.container-description,
+.container-additional-information,
+.container-rewiew{
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid black;
+ 
+}
+
+.tittle-description,
+.tittle-additional-information,
+.tittle-rewiew{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   cursor: pointer;
+}
+
+.tittle-description h4,
+.tittle-additional-information h4,
+.tittle-rewiew h4{
+  font-weight: 300;
+  color: #f0ee7d;
+  line-height: 22px;
+  margin-top: 25px;
+}
+
+
+.card-body{
+    color:aliceblue;   
+}
+
+.card-body svg{
+        width: 60px;
+        height: 60px;
+        color: #e83535;
+}
+
+.imagen1{
+    width: 80%;
+    height: 40vw;
+    max-width: 500px;
+  
+}
+.imagen{
+    width:100%;
+    height: 20vh;
+    
+}
+
+.container-social{
+    display: flex;
+    align-items: center;
+    gap: 100px;
+    padding: 10px 0;
+    border-bottom: 1px solid black;
+}
+
+.container-social span{
+    font-weight: 300;
+    color: #333;
+}
+
+.container-buttons-social{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.container-buttons-social a:visited{
+    color: aliceblue;
+}
+
+.container-buttons-social a:hover{
+    color: #333;
+    cursor: pointer;
+}
+
+.related-container-products{
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: bolder;
+    color:aliceblue;
+}
+
+.card-list-products{
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(4,.8fr);
+    
+}
+
+.card{
+    cursor: pointer;
+    width: 80%;
+    border-radius: 1rem;
+   
+}
+
+.info-card{
+    display: flex;
+    justify-content: space-between;
+}
+
+.text-product{
+    color: #333;
+    font-weight: 300;
+    line-height: 1.4;
+    text-align: center;
+}
+
+.info-card{
+       
+
+    text-align: center;
+}
+.text-product{
+    text-align: center;
+    margin: auto;
+}
+
+
+
+
+
+    /*==todo card==*/
+
+     .container-info-products{
+        width: 100%;
+        height: 100%;
+        
+        
+     }
+
+     .card-list-products{
+       width: 90%;
+        display: grid;
+        gap: 10px;
+        margin-left: 5%;
+
+    }
+
+    .card{
+        width: 80%;
+        margin-left: 10%;
+        border-radius: 1.5rem;
+       }
+       .imagen{
+        border-radius: 1.3rem;
+        height: 15vh;
+
+       }
+       .imagen1{
+        border-radius: 2rem ;
+       }
+       /*===============*/
+
+@media (max-width:850px) {
+    /*==todo card==*/
+    .card-list-products{
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: repeat(3,.8fr);
+        
+    }
+    
+}
+
+
+
+@media (max-width: 576px) {
+   
+/*==todo card==*/
+    h2{
+        width: 80%;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        
+    }
+
+ 
+     
+
+     .info-card{
+       
+
+        text-align: center;
+    }
+
+    .card-list-products{
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        margin-left: 20%;
+    }
+
+    .card{
+        width: 90%;
+        margin-left: 5%;
+       
+    }
+
+   
+
+}
+
+

@@ -1,0 +1,30 @@
+body {
+  
+    background-size: cover ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(../img/contacto/fondo404.jpg);
+}
+
+.error-404{
+    margin: auto;
+  
+    
+    max-width: 200px;
+    text-align: center;
+}
+.error-404 h1{
+    font-size: 100px;
+    font-weight: bold;
+    color: #FFFFFF;
+    margin-bottom: 10px;
+}
+.error-404 p{
+    font-size: 24px;
+    color: #FFFFFF;
+   
+}
+
+footer{
+    margin-top: 5%;
+}
